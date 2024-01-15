@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Memória</title>
+
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bem-vindo ao Jogo de Memória!</h1>
+
+        <div class="options-container">
+            <button onclick="startGame()">Jogar</button>
+            <button onclick="openTutorial()">Tutorial</button>
+        </div>
+
+        <!-- Modal para o Tutorial -->
+        <div id="tutorialModal" style="display: none;">
+            <h2>Como Jogar:</h2>
+            <p>
+                Este é um jogo de memória. O objetivo é encontrar pares correspondentes de cartas.<br>
+                Clique em duas cartas para revelar seus símbolos. Se os símbolos coincidirem, você encontrou um par!<br>
+                Continue encontrando pares até que todas as cartas sejam correspondidas.
+            </p>
+            <button onclick="closeTutorial()">Fechar</button>
+        </div>
+
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = 'index.html'; // Substitua 'jogo.html' pelo seu arquivo principal.
+        }
+
+        function openTutorial() {
+            document.getElementById('tutorialModal').style.display = 'block';
+        }
+
+        function closeTutorial() {
+            document.getElementById('tutorialModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

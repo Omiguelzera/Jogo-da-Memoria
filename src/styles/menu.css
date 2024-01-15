@@ -1,0 +1,75 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.options-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 60px;
+    font-size: 1em;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #5f1e21;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#tutorialModal {
+    display:none;
+    justify-items: center;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+#tutorialModal h2 {
+    color: #fff;
+}
+
+#tutorialModal p {
+    color: #fff;
+}
+
+#tutorialModal button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #5f1e21;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#tutorialModal button:hover {
+    background-color: #5f1e21;
+}
