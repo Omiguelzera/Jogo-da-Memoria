@@ -27,12 +27,12 @@ body{
 h2{
     font-size: 3em;
     border-top-right-radius: 10%;
-    color: #fff;
+    color:  #333;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     border-style:groove;
     border-radius: 5rem;
-    background: #000 0.7%;
+    background: rgba(0,0,0, 0.9);
 }
 
 .reset{
