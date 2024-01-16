@@ -97,3 +97,15 @@ h2{
 .boxMatch::after{
     transform: rotateY(180deg);
 }
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+    /* Ajustes específicos para telas menores (exemplo: smartphones) */
+    .game {
+        max-width: 300px; /* Reduza o tamanho do jogo */
+    }
+
+    .item {
+        width: calc(50% - 20px); /* 2 itens por linha */
+    }
+}
