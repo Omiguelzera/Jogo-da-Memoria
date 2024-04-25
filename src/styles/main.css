@@ -102,10 +102,18 @@ h2{
 @media screen and (max-width: 600px) {
     /* Ajustes específicos para telas menores (exemplo: smartphones) */
     .game {
-        max-width: 300px; /* Reduza o tamanho do jogo */
+        max-width: 80%; /* Reduza o tamanho do jogo */
+    }
+
+    h2{
+        font-size:2em;
     }
 
     .item {
-        width: calc(50% - 20px); /* 2 itens por linha */
+        gap: 70%;
+        height: auto;
+        flex-direction: column;
+   
+        width: calc(50% - 100px); /* 2 itens por linha */
     }
 }
